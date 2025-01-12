@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": "2",
+      "name": "Grand Hayat",
+      "address": "Pune 4",
+      "email": "Hayat@gmail.com",
+      "services": "Indian",
+      "mobile": 8087808780
+    },
+    {
+      "id": "3",
+      "name": "Le Meridian",
+      "address": "Pune Mumbai highway",
+      "email": "Meridian@gmail.com",
+      "services": "Chinese",
+      "mobile": 9823982398
+    },
+    {
+      "id": "4",
+      "name": "Shereton Grand",
+      "address": "Koregaon park",
+      "email": "GrandInfo@gmail.com",
+      "services": "contenental",
+      "mobile": 7020702070
+    }
+  ],
+  "signup": [
+    {
+      "name": "Taj",
+      "email": "TajManagement@gmail.com",
+      "mobile": 9977997799,
+      "password": "password@123",
+      "id": "1"
+    },
+    {
+      "name": "Admin",
+      "email": "Marvellous@gmail.com",
+      "mobile": 7020717020,
+      "password": "Admin@123",
+      "id": "2"
+    }
+  ]
+}

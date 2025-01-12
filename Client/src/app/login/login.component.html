@@ -1,0 +1,27 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                  <h1 class="enhanced-heading">JUSTDIAL LIMITED </h1>
+                  
+                  <h5>User Login Here!</h5>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="logIn()"> 
+                    <div class="mb-3">
+                      <label class="form-label">Email address</label>
+                      <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Password</label>
+                      <input  formControlName="password"  type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary enhanced-btn">Login</button>
+                  </form>
+                  <a style="color: rgb(17, 39, 146); margin-top: 10px;" routerLink="/signup">New User? Click to Sign up</a>
+
+            </div>
+        </div>
+    </div>
+</div>

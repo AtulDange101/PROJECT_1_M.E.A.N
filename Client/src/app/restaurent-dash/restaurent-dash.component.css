@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #000000c9;
+    box-shadow: 0 4px 6px rgba(10, 10, 10, 0.1);
+  }
+  
+  .navbar h2 {
+    font-size: 1.75rem;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .navbar .btn {
+    border-radius: 25px;
+  }
+  
+  /* Custom Jumbotron */
+  .custom-jumbotron {
+    background-color: #007bff;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .custom-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .custom-lead {
+    font-size: 1.3rem;
+    font-style: italic;
+    opacity: 0.85;
+  }
+  
+  .custom-divider {
+    border-top: 2px solid white;
+    width: 60px;
+    margin: 20px auto;
+  }
+  
+  .custom-description {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #e1e1e1;
+  }
+  
+  /* Custom Buttons */
+  .custom-btn {
+    background-color: #28a745;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .custom-btn:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+  }
+  
+  /* Table Styles */
+  .table {
+    font-size: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .table td, .table th {
+    padding: 12px 15px;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #ffffff;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #e1e1e1;
+  }
+  
+  /* Modal */
+  .modal-content {
+    border-radius: 10px;
+  }
+  
+  .modal-header {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .modal-footer .btn {
+    border-radius: 25px;
+  }
+  
+ /* Simple Button Styling for Modal */
+.btn-info, .btn-danger {
+    border-radius: 25px;
+    font-size: 1.1rem;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-info {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .btn-info:hover {
+    background-color: #138496;
+    transform: translateY(-2px);
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+  }
+  
+  /* Focus and Active States */
+  .btn-info:focus, .btn-danger:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .btn-info:active, .btn-danger:active {
+    transform: translateY(1px);
+  }
+  

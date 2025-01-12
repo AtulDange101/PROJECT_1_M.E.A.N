@@ -1,0 +1,91 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+  <div class="container-fluid">
+    <h2 class="text-white">JUSTDIAL ADMIN PORTAL</h2>
+    <div class="d-flex">
+      <button routerLink="/login" class="btn btn-outline-danger" type="button">Log Out</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="jumbotron custom-jumbotron">
+    <h3 class="display-4 custom-heading">Restaurant Information Window</h3>
+    <p class="lead custom-lead">Improving business and customer experience with innovative solutions.</p>
+    <hr class="my-4 custom-divider">
+    <p class="custom-description">Discover the top restaurants in Pune. (Updated January 2025)</p>
+    <p class="lead">
+      <button (click)="clickAddResto()" class="btn custom-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <i class="bi bi-plus-circle"></i> Add Restaurant
+      </button>
+    </p>
+  </div>
+</div>
+
+<table class="table table-striped table-hover mt-4">
+  <thead>
+    <tr>
+      <th scope="col">Restaurant Id</th>
+      <th scope="col">Restaurant Name</th>
+      <th scope="col">Restaurant Email</th>
+      <th scope="col">Restaurant Address</th>
+      <th scope="col">Restaurant Phone</th>
+      <th scope="col">Restaurant Services</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of allRestaurentData">
+      <td>{{data.id}}</td>
+      <td>{{data.name}}</td>
+      <td>{{data.email}}</td>
+      <td>{{data.address}}</td>
+      <td>{{data.mobile}}</td>
+      <td>{{data.services}}</td>
+      <td>
+        <button (click)="onEditResto(data)" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+        <button (click)="deleteResto(data.id)" class="btn btn-outline-danger">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Restaurant Records</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formValue">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" formControlName="name" placeholder="Restaurant Name">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" formControlName="email" placeholder="abcd@gmail.com">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Address</label>
+            <input type="text" class="form-control" formControlName="address" placeholder="Address">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Mobile</label>
+            <input type="text" class="form-control" formControlName="mobile" placeholder="+91-1234567890">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Services</label>
+            <input type="text" class="form-control" formControlName="services" placeholder="Services">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button *ngIf="showAdd" type="button" class="btn btn-primary" (click)="addRestaurent()">Add Details</button>
+        <button *ngIf="showBtn" type="button" class="btn btn-primary" (click)="updateResto()">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
