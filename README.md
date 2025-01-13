@@ -1,6 +1,7 @@
 # JustDial Admin Portal API
 
 The **JustDial Admin Portal API** is a backend service built with **Node.js** and **Express.js** to manage restaurant data for the JustDial platform. It provides a RESTful API to perform CRUD operations (Create, Read, Update, Delete) on restaurant records stored in a **MongoDB** database. 
+
 https://github.com/user-attachments/assets/c10c8af5-6e4c-4732-a949-d7b51cc9ccd6
 
 ### Features:
