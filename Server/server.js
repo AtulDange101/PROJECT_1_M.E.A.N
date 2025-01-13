@@ -8,7 +8,7 @@ port = 5100;
 
 eobj.listen(port, function(req,res)
 {
-  console.log("Marvellous Server is started succesfully");
+  console.log("--Express-Server-- is started succesfully");
 });
 
 
